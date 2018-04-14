@@ -1,0 +1,180 @@
+.slider {
+  position: relative;
+  background: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.desc {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  margin-top: -131px;
+  color: #fff;
+}
+.desc .title-1 {
+  font-size: 80px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+.desc .title-2 {
+  font-style: italic;
+}
+
+.shopzon-btn-1 {
+  background: #8bc34a;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 60px 12px 70px;
+  transition: all .4s ease;
+}
+.shopzon-btn-1 > a {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+.shopzon-btn-1 > i {
+  transition: all .4s ease-in-out;
+}
+.shopzon-btn-1:hover {
+  cursor: pointer;
+  background: #444;
+}
+.shopzon-btn-1:hover > i {
+  transform: translateX(-5px);
+}
+
+/*
+ * jQuery Nivo Slider v2.3
+ * Copyright 2010, Gilbert Pellegrom
+ */
+/* The Nivo Slider styles */
+.nivoSlider {
+  width: 100%;
+  position: relative;
+  /* If an image is wrapped in a link */
+}
+.nivoSlider img:first-child {
+  position: static;
+  display: block;
+}
+.nivoSlider img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 60;
+  display: none;
+}
+
+/* The slices in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 50;
+  height: 100%;
+}
+
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  /* Overridden by captionOpacity setting */
+  width: 100%;
+  z-index: 89;
+}
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+.nivo-caption a {
+  display: inline !important;
+}
+
+.nivo-html-caption {
+  display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 35%;
+  z-index: 4999;
+  cursor: pointer;
+}
+
+.nivo-prevNav, .nivo-nextNav {
+  top: 40%;
+  font-size: 0;
+}
+.nivo-prevNav:before, .nivo-nextNav:before {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  z-index: 4999;
+  color: #fff;
+  background: transparent;
+  text-align: center;
+  transition: all .3s ease-in;
+  font: 100 30px/40px "Glyphicons Halflings";
+}
+.nivo-prevNav:hover::before, .nivo-nextNav:hover::before {
+  background: #8bc34a;
+  border: 4px solid #8bc34a;
+}
+
+.nivo-prevNav {
+  left: 15%;
+}
+.nivo-prevNav:before {
+  display: none;
+  content: "\e257";
+}
+
+.nivo-nextNav {
+  right: 15%;
+}
+.nivo-nextNav:before {
+  display: none;
+  content: "\e258";
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
+
+.slider:hover .nivo-prevNav, .slider:hover .nivo-nextNav {
+  z-index: 5000;
+  top: 48%;
+  transition: all .4s ease;
+}
+.slider:hover .nivo-prevNav:before, .slider:hover .nivo-nextNav:before {
+  display: block;
+}
+
+/*# sourceMappingURL=slider1.css.map */

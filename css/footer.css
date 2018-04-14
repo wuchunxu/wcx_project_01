@@ -1,0 +1,55 @@
+.service-info {
+  background: #e9ebee;
+}
+.service-info .row {
+  padding: 40px 0;
+}
+.service-info .row:first-child {
+  border-bottom: 1px solid #fff;
+}
+.service-info .single-service > span {
+  color: #8bc34a;
+  font-size: 40px;
+}
+.service-info .single-service .ser-title a {
+  color: #777;
+  transition: all .4s ease;
+}
+.service-info .single-service .ser-title a:hover {
+  color: #8bc34a;
+}
+.service-info .single-service .ser-detail {
+  color: #444;
+}
+.service-info dl dt {
+  font-size: 22px;
+  color: #777;
+  line-height: 1.8em;
+}
+.service-info dl dd {
+  font-size: 16px;
+  color: #444;
+  line-height: 2em;
+}
+.service-info dl dd a {
+  color: #444;
+  transition: all .4s ease;
+}
+.service-info dl dd a:hover {
+  color: #8bc34a;
+}
+.service-info dl dd .glyphicon {
+  margin-right: 10px;
+  color: #8bc34a;
+}
+
+.copyright {
+  font-size: 16px;
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+}
+
+/*# sourceMappingURL=footer.css.map */
