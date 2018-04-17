@@ -82,6 +82,69 @@ ul li {
   background: #8bc34a;
 }
 
+.para {
+  color: #444;
+  font-size: 14px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-main .media {
+  margin-bottom: 30px;
+}
+.contact-main .media .media-left .glyphicon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #8bc34a;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+}
+.contact-main .media .media-left .glyphicon:hover {
+  background: #444;
+}
+.contact-main .message input {
+  width: 48%;
+  height: 50px;
+  border: 1px solid #eee;
+  padding: 0 10px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: all .4s ease;
+}
+.contact-main .message input + input {
+  margin-left: 3%;
+}
+.contact-main .message input:focus {
+  border: 1px solid #8bc34a;
+}
+.contact-main .message textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 17px;
+}
+.contact-main .message textarea:focus {
+  border: 1px solid #8bc34a;
+}
+.contact-main .message .theme-btn-1 {
+  width: auto;
+  padding: 12px 60px;
+  border: none;
+}
+
+.sign-in .form-horizontal .form-group input {
+  height: 50px;
+}
+.sign-in .form-horizontal .form-group label {
+  height: 50px;
+  line-height: 50px;
+}
+
 /*==============  1.  background  ==================*/
 
 /*# sourceMappingURL=base.css.map */

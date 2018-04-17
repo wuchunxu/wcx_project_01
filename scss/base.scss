@@ -92,6 +92,80 @@ ul {
 }
 
 
+.para {
+  color: #444;
+  font-size: 14px;
+  line-height: 32px;
+  margin-bottom:20px;
+}
+
+.contact-main {
+  .media {
+    margin-bottom:30px;
+    .media-left {
+      .glyphicon {
+        width: 50px;
+        height: 50px;
+        display:inline-block;
+        background:$theme-color;
+        color:#fff;
+        text-align:center;
+        line-height: 50px;
+        font-size: 24px;
+        border-radius:50%;
+        &:hover {
+          background:#444;
+        }
+
+      }
+    }
+  }
+  .message {
+    input {
+      width: 48%;
+      height: 50px;
+      border: 1px solid #eee;
+      padding:0 10px;
+      outline:none;
+      margin-bottom:20px;
+      transition:all .4s ease;
+      &+input {
+        margin-left:3%;
+      }
+      &:focus {
+        border: 1px solid $theme-color;
+      }
+    }
+    textarea {
+      width: 100%;
+      outline:none;
+      border: 1px solid #eee;
+      padding:10px;
+      margin-bottom:17px;
+      &:focus {
+        border: 1px solid $theme-color;
+      }
+    }
+    .theme-btn-1 {
+      width:auto;
+      padding: 12px 60px;
+      border: none;
+    }
+  }
+}
+.sign-in{
+  .form-horizontal{
+    .form-group {
+      input {
+        height: 50px;
+      }
+      label {
+        height:50px;
+        line-height:50px;
+      }
+    }
+  }
+}
 /*==============  1.  background  ==================*/
 $color-default: 	#f6f6f6;
 $color-gray: 		#f1f1f1;
