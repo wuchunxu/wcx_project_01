@@ -22,19 +22,25 @@
 <div id="main" class="sign-in">
     <div class="container">
         <h1>登录</h1>
-        <form action="#" class="form-horizontal">
+        <form action="data/login.php" class="form-horizontal" id="login">
             <div class="form-group">
-                <label for="uname" class="col-md-4 col-xs-12">用户名或邮箱地址</label>
-                <input type="text" class=" col-md-6 col-xs-12" id="uname"/>
+                <label for="uname" class="col-md-2 col-md-offset-2 col-xs-12">用户名或邮箱地址</label>
+                <input type="text" class=" col-md-6 col-xs-12" id="uname" placeholder="用户名" value="dingding"/>
+                <span class="feedback failed col-md-3 col-xs-12">用户名格式有误</span>
+                <span class="feedback success col-md-3 col-xs-12">格式正确</span>
             </div>
             <div class="form-group">
-                <label for="uname" class="col-md-4 col-xs-12">密码</label>
-                <input type="password" class="col-md-6 col-xs-12" id="upwd"/>
+                <label for="upwd" class="col-md-2 col-md-offset-2 col-xs-12">密码</label>
+                <input type="password" class="col-md-6 col-xs-12" id="upwd" placeholder="请输入密码" value="123456"/>
+                <span class="feedback failed col-md-3 col-xs-12">密码为不少于6位的数字或字母</span>
+                <span class="feedback success col-md-3 col-xs-12">格式正确</span>
             </div>
-            <div>
-                <a href="#">忘记密码?</a>
-                <input type="checkbox" id="remember-me"/><label for="remember-me">记住我</label>
-                <input type="submit" class="theme-btn-1" value="登录"/>
+            <div class="form-group">
+                <div class="col-md-2 col-md-offset-2 col-xs-12">
+                    <a href="#">忘记密码?</a>
+                    <input type="checkbox" id="remember-me"/><label for="remember-me">记住我</label>
+                </div>
+                <input type="submit" class="col-md-6 col-xs-12 theme-btn-1" value="登录"/>
             </div>
         </form>
     </div>
@@ -44,5 +50,6 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

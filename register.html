@@ -19,10 +19,58 @@
         </div>
     </div>
 </div>
+<div id="main" class="sign-in">
+    
+    <div class="container">
+        <h1>注册</h1>
+        <form action="data/register.php" class="form-horizontal" id="register" method="post">
+            <div class="form-group">
+                <label for="uname" class="col-md-2 col-md-offset-2 col-xs-12">用户名</label>
+                <input type="text" class=" col-md-5 col-xs-12" id="uname" placeholder="用户名" name="uname"/>
+                <span class="feedback success col-md-3 col-xs-12">用户名可用</span>
+                <span class="feedback failed col-md-3 col-xs-12">6~18位字母或数字</span>
+                <span class="feedback occupied col-md-3 col-xs-12">用户名已被占用</span>
+            </div>
+            <div class="form-group">
+                <label for="upwd" class="col-md-2 col-md-offset-2 col-xs-12">密码</label>
+                <input type="password" class="col-md-5 col-xs-12" id="upwd" name="upwd" placeholder="请输入密码"/>
+                <span class="feedback failed col-md-3 col-xs-12">密码为不少于6位的数字或字母</span>
+                <span class="feedback success col-md-3 col-xs-12">格式正确</span>
+            </div>
+            <div class="form-group">
+                <label for="upwd2" class="col-md-2 col-md-offset-2 col-xs-12">确认密码</label>
+                <input type="password" class="col-md-5 col-xs-12" id="upwd2"  placeholder="请输入密码"/>
+                <span class="feedback failed col-md-3 col-xs-12">密码为不少于6位的数字或字母</span>
+                <span class="feedback success col-md-3 col-xs-12">格式正确</span>
+                <span class="feedback notEqual col-md-3 col-xs-12">两次输入密码不一致</span>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-md-2 col-md-offset-2 col-xs-12">邮箱</label>
+                <input type="text" class="col-md-5 col-xs-12" id="email" name="email" placeholder="someone@example.com"/>
+                <span class="feedback success col-md-3 col-xs-12">邮箱格式正确</span>
+                <span class="feedback failed col-md-3 col-xs-12">邮箱格式错误</span>
+                <span class="feedback occupied col-md-3 col-xs-12">邮箱已被注册</span>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="col-md-2 col-md-offset-2 col-xs-12">手机</label>
+                <input type="text" class="col-md-5 col-xs-12" id="phone" name="phone" placeholder="手机号码"/>
+                <span class="feedback success col-md-3 col-xs-12">手机号码格式正确</span>
+                <span class="feedback failed col-md-3 col-xs-12">手机号码格式错误</span>
+                <span class="feedback occupied col-md-3 col-xs-12">手机号已被注册</span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="col-md-6 col-md-offset-4 theme-btn-1" value="提交"/>
+            </div>
+
+        </form>
+    </div>
+    
+</div>
 <div id="footer"></div>
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/header.js"></script>
+<script src="js/register.js"></script>
 <script src="js/footer.js"></script>
 </body>
 </html>

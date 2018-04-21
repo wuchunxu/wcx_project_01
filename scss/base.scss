@@ -148,24 +148,142 @@ ul {
     }
     .theme-btn-1 {
       width:auto;
+      margin-left:-15px;
       padding: 12px 60px;
       border: none;
+      outline:none;
     }
   }
 }
 .sign-in{
+  h1 {
+    text-align:center;
+    margin-bottom:25px;
+  }
+  padding:50px 0 100px;
   .form-horizontal{
     .form-group {
       input {
         height: 50px;
+        outline:none;
+        //margin-left:15px;
+        &:focus{
+          border:1px solid $theme-color;
+        }
+      }
+      a{
+        padding-right:10px;
       }
       label {
-        height:50px;
+        height: 50px;
+        line-height: 50px;
+      }
+      &>div>*{
+        float:left;
+        margin:0;
+        height: 50px;
         line-height:50px;
       }
+      .feedback {
+        height: 50px;
+        line-height: 50px;
+        color:red;
+        display:none;
+        &.success{
+          color:$theme-color;
+        }
+        &.in{
+          display: inline-block;
+        }
+      }
+    }
+
+    .theme-btn-1 {
+      width: 200px!important;
+      border:none;
+      outline:none;
     }
   }
 }
+.feedback-info {
+  text-align: center;
+  color:#444;
+  font-size: 24px;
+
+}
+.linkTo {
+  text-align: center;
+  font-size: 18px;
+  a{
+    color:#444;
+    font-size: 18px;
+    text-decoration: underline!important;
+    transition:all .4s ease;
+    &:hover {
+      color:$theme-color;
+    }
+  }
+  
+}
+.logout {
+  border:none;
+  outline:none;
+  padding:3px 6px;
+  background:#444;
+  color:#fff;
+  transition:all .4s ease;
+  &:hover {
+    background:$theme-color;
+  }
+}
+
+#lift {
+  margin-top: 25px;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  background-color: #918888;
+  right: 10px;
+  bottom: 100px;
+  .lift-list {
+    display: block;
+    list-style: none
+  }
+  .lift-item {
+    border-top: 1px solid #b1aaaa;
+    transition: background-color .1s;
+    transition: all .3s linear;
+  }
+  .lift-btn {
+    overflow: hidden;
+    display: block;
+    width: 24px;
+    padding: 10px 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #fefefe;
+    transition: color .1s;
+  }
+  .lift-item:hover,
+  .lift-item.hover {
+    position: relative;
+    border-bottom: 1px solid #d70b1c;
+    margin-bottom: -1px;
+    border-color: #d70b1c;
+    background-color: #d70b1c;
+  }
+  .lift-btn {
+    overflow: hidden;
+    display: block;
+    width: 34px;
+    padding: 10px 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #fefefe;
+    transition: color .1s;
+  }
+}
+
 /*==============  1.  background  ==================*/
 $color-default: 	#f6f6f6;
 $color-gray: 		#f1f1f1;
