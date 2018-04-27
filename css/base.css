@@ -228,11 +228,12 @@ ul li {
 #lift .lift-list {
   display: block;
   list-style: none;
+  margin: 0;
 }
 #lift .lift-item {
-  border-top: 1px solid #b1aaaa;
+  border-top: 1px solid #fff;
   transition: background-color .1s;
-  transition: all .3s linear;
+  transition: all .3s ease;
 }
 #lift .lift-btn {
   overflow: hidden;
@@ -247,10 +248,8 @@ ul li {
 #lift .lift-item:hover,
 #lift .lift-item.hover {
   position: relative;
-  border-bottom: 1px solid #d70b1c;
-  margin-bottom: -1px;
-  border-color: #d70b1c;
-  background-color: #d70b1c;
+  border-color: #fff;
+  background-color: #8bc34a;
 }
 #lift .lift-btn {
   overflow: hidden;
@@ -261,6 +260,10 @@ ul li {
   text-align: center;
   color: #fefefe;
   transition: color .1s;
+}
+
+.relative {
+  position: relative;
 }
 
 /*==============  1.  background  ==================*/

@@ -6,6 +6,7 @@
     <title>商品详情</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/singleProduct.css" />
 </head>
 
 <body>
@@ -24,11 +25,98 @@
             </div>
         </div>
     </div>
-    
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <!-- 放大镜图片展示 -->
+                    <div id="img-shower">
+                        <div class="big-img">
+                            <img class="img-responsive" src="images/single-product/1-lg.jpg" alt="">
+                            <div id="mask"></div>
+                            <div id="superMask"></div>
+                        </div>
+                        <div class="small-imgs">
+                            <ul class="clear-fix">
+                                <li class="active"><img src="images/single-product/1-sm.jpg" alt=""></li>
+                                <li><img src="images/single-product/4-sm.jpg" alt=""></li>
+                                <li><img src="images/single-product/2-sm.jpg" alt=""></li>
+                                <li><img src="images/single-product/3-sm.jpg" alt=""></li>
+                                <li><img src="images/single-product/1-sm.jpg" alt=""></li>
+                            </ul>
+                            <span class="prev disabled"><i class="glyphicon glyphicon-menu-left"></i></span>
+                            <span class="next"><i class="glyphicon glyphicon-menu-right"></i></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 relative">
+                    <div class="detail">
+                        <h2 class="product-title">芭淇（BOQITS） 化妆刷套装 专业化妆套刷全套粉底刷眼影刷腮红刷美妆彩妆化妆工具刷子 12只白色化妆刷-桶装</h2>
+                        <h3 class="product-sub-title">支持货到付款 有刷桶和刷包可以选择</h3>
+                        <p class="product-price">价格<i class="glyphicon glyphicon-yen"></i><span>98.00</span></p>
+                        <p class="storage">库存:<span>999</span>件</p>
+                        <div class="spec clear-fix">
+                            <span>规格:</span>
+                            <ul>
+                                <li><a href="#">8只哑金化妆刷套装-包装</a></li>
+                                <li><a href="#">12只白色化妆刷套装-桶装</a></li>
+                                <li><a href="#">12支白色化妆刷套装-包装</a></li>
+                            </ul>
+                        </div>
+                        <div class="counter">
+                            <span class="minus">-</span>
+                            <input class="count" type="text" value="1" readonly="readonly">
+                            <span class="plus">+</span>
+                            <button class="add-to-cart">加入购物车</button>
+                        </div>
+                        
+                    </div>
+                    <div class="bigger-img"></div>
+                </div>
+                <div class="col-md-2 hidden-xs hidden-sm">
+                    <div class="relate">
+                        <h3>猜你喜欢</h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="images/shop-list/1.jpg" alt="">
+                                </a>
+                                <p class="relate-title">title</p>
+                                <p class="relate-price">price</p>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/shop-list/2.jpg" alt=""></a>
+                                <p class="relate-title">title</p>
+                                <p class="relate-price">price</p>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/shop-list/3.jpg" alt=""></a>
+                                <p class="relate-title">title</p>
+                                <p class="relate-price">price</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="more-detail">
+                        <ul>
+                            <li>商品参数</li>
+                            <li>评价</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div id="footer"></div>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/product_detail.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/login.js"></script>
 </body>

@@ -247,12 +247,13 @@ ul {
   bottom: 100px;
   .lift-list {
     display: block;
-    list-style: none
+    list-style: none;
+    margin:0;
   }
   .lift-item {
-    border-top: 1px solid #b1aaaa;
+    border-top: 1px solid #fff;
     transition: background-color .1s;
-    transition: all .3s linear;
+    transition: all .3s ease;
   }
   .lift-btn {
     overflow: hidden;
@@ -267,10 +268,8 @@ ul {
   .lift-item:hover,
   .lift-item.hover {
     position: relative;
-    border-bottom: 1px solid #d70b1c;
-    margin-bottom: -1px;
-    border-color: #d70b1c;
-    background-color: #d70b1c;
+    border-color: #fff;
+    background-color: $theme-color;
   }
   .lift-btn {
     overflow: hidden;
@@ -284,6 +283,9 @@ ul {
   }
 }
 
+.relative {
+  position:relative;
+}
 /*==============  1.  background  ==================*/
 $color-default: 	#f6f6f6;
 $color-gray: 		#f1f1f1;
