@@ -68,7 +68,7 @@ $(function(){
             $.ajax({
                 type:"get",
                 dataType: "json",
-                url: "data/isRegister.php",
+                url: "data/user/isRegister.php",
                 data : `${field}=${val}`,
                 success: function(data){
                     //console.log(data);
@@ -107,7 +107,7 @@ $(function(){
                     email: $("#email").val(),
                     phone: $("#phone").val()
                 },
-                url:"data/register.php",
+                url:"data/user/register.php",
                 success:function(data){
                     //console.log(data);
                     if(data.code>0){

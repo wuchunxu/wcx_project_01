@@ -216,8 +216,35 @@
   width: 100%;
 }
 
-.more-detail {
-  border-top: 1px solid #ccc;
+.more-detail ul {
+  margin-bottom: 0;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #8bc34a;
+  background: #fff;
+}
+.more-detail ul li {
+  display: inline-block;
+}
+.more-detail ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #444;
+  font-size: 18px;
+  background: #efefef;
+}
+.more-detail ul li.active a {
+  background: #8bc34a;
+  color: #fff;
+}
+.more-detail .product-params {
+  display: show;
+}
+.more-detail .product-params .pics img {
+  width: 100%;
+}
+.more-detail .product-comment {
+  display: none;
 }
 
 /*# sourceMappingURL=singleProduct.css.map */

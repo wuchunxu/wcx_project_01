@@ -1,5 +1,5 @@
 <?php
-    require_once("init.php");
+    require_once("../init.php");
     /*
         获取客户端提交的信息
     */

@@ -3,7 +3,7 @@
         login.php
     */
 
-    require_once("init.php");
+    require_once("../init.php");
 
     @$uname = $_REQUEST["uname"];
     @$upwd  = $_REQUEST["upwd"];

@@ -26,13 +26,14 @@ $(function(){
         if(regCheck(regUname,$uname)&&regCheck(regUpwd,$upwd)){
             $.ajax({
                 type:"POST",
-                url:"data/login.php",
+                url:"data/user/login.php",
                 dataType:"json",
                 data:{
                     uname: $uname.val(),
                     upwd: $upwd.val()
                 },
                 success:function(data){
+                    console.log(data);
                     if(data.code>0){
                         alert("登录成功！");
                         location.href="index.html";

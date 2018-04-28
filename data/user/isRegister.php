@@ -3,7 +3,7 @@
         isRegister.php
         用来检测用户名、邮箱、手机号是否已被注册
     */
-    require_once("init.php");
+    require_once("../init.php");
 
     
     @$uname = $_REQUEST["uname"];

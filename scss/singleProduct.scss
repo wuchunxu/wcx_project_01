@@ -222,5 +222,40 @@ $theme-color:#8bc34a;
     }
 }
 .more-detail{
-    border-top:1px solid #ccc;
+    //border-top:1px solid #eee;
+    
+    ul{
+        margin-bottom:0;
+        position:sticky;
+        top:0;
+        border-bottom:1px solid $theme-color;
+        background:#fff;
+        li{
+            display:inline-block;
+            a {
+                display: block;
+                padding:10px 20px;
+                color:#444;
+                font-size: 18px;
+                background:#efefef;
+            }
+            &.active {
+                a {
+                     background:$theme-color;
+                     color:#fff;
+                }
+            }
+        }
+    }
+    .product-params{
+        display:show;
+        .pics{
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .product-comment{
+        display:none;
+    }
 }

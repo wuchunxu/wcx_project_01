@@ -2,7 +2,7 @@
     /*
         isLogin.php
     */
-    require_once("init.php");
+    require_once("../init.php");
     session_start();
     @$uid = $_SESSION["uid"];
     if($uid==null){

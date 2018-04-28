@@ -1,4 +1,7 @@
 $(function(){
+    /*
+        第一部分，放大镜js
+    */
     var $imgShower = $("#img-shower");
     var $bigImg = $imgShower.find(".big-img>img");
     var $biggerImg = $(".bigger-img");
@@ -136,4 +139,53 @@ $(function(){
         $ul.css("left",moved*(width_li+10));
         changeColor();
     }
+
+    /*
+        第二部分，获取数据
+    */
+    var $detail = $(".detail");
+    var detail = {
+        title: $detail.children(".product-title"),
+        sub_title:$detail.children(".product-sub-title"),
+        price: $detail.find(".product-price>span"),
+        storage:$detail.find(".storage>span"),
+        spec:$detail.find(".spec>ul")
+    };
+    var $detail_imgs = $(".more-detail>.product-params>.pics");
+    function loadPage(){
+        $.ajax({
+            url:"data/product/getProductsById.php",
+            type:"get",
+            dataType:"json",
+            data:{
+                pid:1
+            },
+            success:function(data){
+                console.log(data);
+                var {title,subtitle,price,specs,storage,category,detail_imgs} = data;
+                detail.title.html(title);
+                detail.sub_title.html(subtitle);
+                detail.price.html(price);
+                detail.storage.html(storage);
+
+                //注入主要信息
+                var spec_html = "";
+                for(var ele of specs){
+                    spec_html += `<li><a href="#">${ele}</a></li>`;
+                }
+                detail.spec.html(spec_html);
+
+                //
+
+                //更多细节图片
+                var imgs_html = "";
+                $(detail_imgs).each((i,ele)=>{
+                    imgs_html += `<img src="${ele}">`;
+                });
+                $detail_imgs.html(imgs_html);
+            }
+        });
+    }
+
+    loadPage();
 })

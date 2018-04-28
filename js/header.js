@@ -1,13 +1,10 @@
-/**
- * Created by web-01 on 2018/4/14.
- */
 $(function(){
     $(`<link rel="stylesheet" href="css/header.css">`).appendTo(document.head);
     $nav = $("#nav");
     $nav.load("header.html",function(){
         //判断是否已经登录
         $.ajax({
-            url:"data/isLogin.php",
+            url:"data/user/isLogin.php",
             type:"get",
             dataType:"json",
             success:function(data){
@@ -21,7 +18,7 @@ $(function(){
                     $nav.find(".vip>ul").html(html);
                     $nav.find(".vip .logout").click(function(){
                         $.ajax({
-                            url:"data/logout.php",
+                            url:"data/user/logout.php",
                             type:"get",
                             success:function(data){
                                 if(data.code>0){
